@@ -8,7 +8,7 @@ export class GetUsersController implements IGetUsersController {
             const users = await this.getUsersRepository.getUsers();
 
             return {
-                satausCode: 200,
+                satausCode: 500,
                 body: users,
             }
         } catch (error) {
